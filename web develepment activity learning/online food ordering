@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+}
+/* Header */
+header {
+    background: #101c3a;
+    color: white;
+    padding: 22px;
+    text-align: center;
+}
+/* Navigation */
+nav {
+    background: #2455a4;
+    padding: 16px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: yellow;
+    border-bottom: 2px solid yellow;
+}
+/* Profile */
+.profile {
+    text-align: center;
+    padding: 45px 20px;
+    background: linear-gradient(120deg, #142b55, #3984c6);
+    color: white;
+    animation: fadein 2s;
+}
+.profile img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+}
+.profile h1 {
+    margin: 15px;
+    font-size: 35px;
+}
+/* Animation */
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+/* Sections */
+.section {
+    padding: 35px 20px;
+    text-align: center;
+}
+.section h2 {
+    color: #174477;
+    margin-bottom: 25px;
+}
+/* Cards */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    background: white;
+    width: 260px;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #bbb;
+    transition: 0.4s;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px #888;
+}
+.card h3 {
+    color: #2455a4;
+    margin-bottom: 12px;
+}
+/* Skills */
+.skill {
+    background: #dce5f0;
+    margin: 12px auto;
+    width: 80%;
+    height: 15px;
+    border-radius: 10px;
+}
+.skill-bar {
+    background: #2455a4;
+    height: 15px;
+    border-radius: 10px;
+}
+button {
+    background: #2455a4;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+button:hover {
+    background: #101c3a;
+}
+/* Contact */
+.contact {
+    background: #dceaff;
+    padding: 35px;
+    text-align: center;
+}
+/* Footer */
+footer {
+    background: #101c3a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* Mobile Responsive */
+    .profile h1 {
+        font-size: 27px;
+    }
+    .card {
+        width: 100%;
+    }
+    .skill {
+        width: 95%;
+    }
+</style>
+</head>
+<body>
+<!-- Header -->
+<header>
+    <h1>MY PERSONAL PORTFOLIO</h1>
+    <p>Welcome to My Website</p>
+</header>
+<!-- Navigation -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+</nav>
+<!-- Profile -->
+<div class="profile" id="home">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Nj9ztUUAlTiFL-tvT5SiwOg3dsC_-_e_RiJDNWL9CIqHQc686XXeLt6x&s=10" alt="My Profile Picture">
+    <h1>Hello, I'm K. Ravindra</h1>
+    <h3>First Year B.Tech CSE Student</h3>
+    <p>
+        I am interested in Artificial Intelligence,
+        Machine Learning and Programming.
+    </p>
+</div>
+<!-- Education -->
+<div class="section" id="education">
+    <h2>Educational Qualifications</h2>
+    <div class="container">
+        <div class="card">
+            <h3>School Education</h3>
+            <p>Completed School Education</p>
+        </div>
+        <div class="card">
+            <h3>Intermediate</h3>
+            <p>Completed Intermediate Education</p>
+        </div>
+        <div class="card">
+            <h3>B.Tech</h3>
+            <p>Computer Science and Engineering</p>
+            <p>First Year Student</p>
+        </div>
+    </div>
+</div>
+<!-- Skills -->
+<div class="section" id="skills">
+    <h2>Technical Skills</h2>
+    <h3>HTML</h3>
+    <div class="skill">
+        <div class="HTML" style="width:90%"></div>
+    </div>
+    <h3>CSS</h3>
+    <div class="skill">
+        <div class="CSS" style="width:80%"></div>
+    </div>
+    <h3>Python</h3>
+    <div class="skill">
+        <div class="Java" style="width:70%"></div>
+    </div>
+    <h3>Java</h3>
+    <div class="skill">
+        <div class="Python" style="width:60%"></div>
+    </div>
+</div>
+<!-- Hobbies -->
+<div class="section" id="hobbies">
+    <h2>My Hobbies</h2>
+    <div class="container">
+        <div class="card">
+            <h3>Reading</h3>
+            <p>Reading books and learning new things.</p>
+        </div>
+        <div class="card">
+            <h3>Programming</h3>
+            <p>Practicing coding and solving problems.</p>
+        </div>
+        <div class="card">
+            <h3>Music</h3>
+            <p>Listening to music.</p>
+        </div>
+        <div class="card">
+            <h3>Sports</h3>
+            <p>Playing outdoor games.</p>
+        </div>
+    </div>
+</div>
+<!-- Projects -->
+<div class="section" id="projects">
+    <h2>My Projects</h2>
+    <div class="container">
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Created a personal website using HTML and CSS.</p>
+        </div>
+        <div class="card">
+            <h3>Calculator</h3>
+            <p>Created a basic calculator using HTML and CSS.</p>
+        </div>
+        <div class="card">
+            <h3>Food Ordering Website</h3>
+            <p>Designed a food ordering interface.</p>
+        </div>
+    </div>
+</div>
+<!-- Achievements -->
+<div class="section" id="achievements">
+    <h2>Achievements</h2>
+    <div class="container">
+        <div class="card">
+            <h3>Academic Achievement</h3>
+            <p>Participated in academic activities.</p>
+        </div>
+        <div class="card">
+            <h3>Technical Learning</h3>
+            <p>Learning programming and web development.</p>
+        </div>
+        <div class="card">
+            <h3>Workshop</h3>
+            <p>Interested in AI and ML workshops.</p>
+        </div>
+    </div>
+</div>
+<!-- Contact -->
+<div class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: KopparapuRavindra123@Gmail.Com</p>
+    <p>Phone: +91 8639068478</p>
+    <p>Location: Andhra Pradesh, India</p>
+</div>
+<!-- Footer -->
+<footer>
+    <p>© 2026 My Personal Portfolio</p>
+    <p>Designed using HTML and CSS</p>
+</footer>
+</body>
+</html>
